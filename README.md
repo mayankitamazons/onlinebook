@@ -23,7 +23,7 @@ There are 3 Folders
 1. REACT   (FrontEnd)
 2. NodeJS  (BackEnd API)
 3. Express (Framework)
-4. MongoDb (Database)
+4. Mysql (Database)
 5. Stripe Payment Method
 6. JWT Token
 7. Routing
