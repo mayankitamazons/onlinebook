@@ -160,8 +160,8 @@ const AddProduct = () => {
 				                                    <label className="col-sm-3 col-form-label">Category</label>
 				                                    <div className="col-sm-9">
 				                                       <select className="form-control" name="category" multiple>
-				                                          <option value="man">Man</option>
-				                                          <option value="woman">Woman</option>
+				                                          <option value="fiction">Fiction</option>
+				                                          <option value="history">History</option>
 				                                       </select>
 				                                    </div>
 				                                 </div>

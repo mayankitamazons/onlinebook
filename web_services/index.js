@@ -14,13 +14,28 @@ const stripeRoute = require("./routes/stripe");
 dotenv.config();
 
 //MongoDB Connection
-mongoose.connect(process.env.DB_URL_DEVELOPMENT)
-.then(()=>{
-	console.log("DB Connection Successfully")
-}).catch((err)=>{
-	console.log(err)
-})
-
+// mongoose.connect(process.env.DB_URL_DEVELOPMENT)
+// .then(()=>{
+// 	console.log("DB Connection Successfully")
+// }).catch((err)=>{
+// 	console.log(err)
+// })
+let MONGODB_URI = "mongodb+srv://@cluster0.chhg7.mongodb.net/"
+let DB_NAME = "onlineBook"
+let USERNM = "arpit1011"
+let PASS = "arpit1011"
+mongoose.connect(MONGODB_URI, {
+		useNewUrlParser: true,
+		useUnifiedTopology: true,
+		useFindAndModify: false,
+		user: USERNM,
+		pass: PASS,
+		dbName: DB_NAME
+	})
+	.then(() => {
+		console.log('db connected...')
+	})
+	.catch(err => console.log(err.message))
 //Allow to call from different source
 app.use(cors());
 // parse requests of content-type - application/json, Read JSON data from request
