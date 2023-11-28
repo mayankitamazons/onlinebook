@@ -13,13 +13,12 @@ const stripeRoute = require("./routes/stripe");
 // Read value from .env file
 dotenv.config();
 
-//MongoDB Connection
-// mongoose.connect(process.env.DB_URL_DEVELOPMENT)
-// .then(()=>{
-// 	console.log("DB Connection Successfully")
-// }).catch((err)=>{
-// 	console.log(err)
-// })
+var db = mysql.createConnection({
+    host     : 'localhost',
+    user     : 'root',
+    password : '',
+    database : 'ecom'
+  });
 let MONGODB_URI = "mongodb+srv://@cluster0.chhg7.mongodb.net/"
 let DB_NAME = "onlineBook"
 let USERNM = "arpit1011"

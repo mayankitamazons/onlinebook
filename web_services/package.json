@@ -17,6 +17,7 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.9.12",
     "mongoose-double": "^0.0.1",
+    "mysql": "^2.18.1",
     "nodemon": "^2.0.15",
     "stripe": "^8.212.0"
   }
